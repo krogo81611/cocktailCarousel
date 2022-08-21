@@ -11,6 +11,9 @@ function getFetch() {
         let interval = 3000;
         data.drinks.forEach((drink,index) => {
         setTimeout(() => {
+        for(let i = 1; i<=15; i++) {
+            console.log(drink.strIngredient)
+        }
         document.querySelector('h2').innerText = drink.strDrink
         document.querySelector('img').src = drink.strDrinkThumb
         document.querySelector('.instructions').innerText = drink.strInstructions 
